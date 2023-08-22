@@ -3,5 +3,5 @@ Learning python
 
 ## Modules:
 
-* Basics of python: [Python_with_colab.ipynb](https://colab.research.google.com/github/YahyaHussain/Python/blob/main/Python_with_collab.ipynb)
+* Basics of python: [Python_with_colab.ipynb](https://colab.research.google.com/github/YahyaHussain/Python/blob/main/Python_with_colab.ipynb)
 * Numpy: [Numpy_in_python]()
