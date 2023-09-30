@@ -1,5 +1,5 @@
-# Python
-Learning python
+# Machine Learning
+Learning ML with Python
 
 ## Modules:
 
