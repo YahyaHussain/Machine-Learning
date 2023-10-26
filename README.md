@@ -9,3 +9,4 @@ Learning ML with Python
 * Model - 2:
   * [Data](https://github.com/YahyaHussain/Machine-Learning/blob/main/Delhi_house_data.csv)
   * [Pricing-Prediction](https://github.com/YahyaHussain/Machine-Learning/blob/main/Price_Prediction.ipynb)
+* [KNN Regression Analysis](https://github.com/YahyaHussain/Machine-Learning/blob/main/KNN_Regression_Analysis.ipynb)
