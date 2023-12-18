@@ -49,3 +49,61 @@ plt.title("Iteration Number vs Prediction")
 plt.xlabel("Iteration Number")
 plt.ylabel("Prediction")
 plt.show()
+
+
+
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Sigmoid function
+def sigmoid(x):
+    return 1.0 / (1 + np.exp(-x))
+
+# Error function
+def error(predicted, target):
+    return (predicted - target) ** 2
+
+# Update weight function
+def update_w(w, x, grad, learning_rate):
+    return w - learning_rate * grad * x
+
+# Initialize variables
+x1, x2 = 0.1, 0.4
+target = 0.7
+learning_rate = 0.01
+w1, w2 = np.random.rand(), np.random.rand()
+
+# Training loop
+predicted_output = []
+network_error = []
+
+for _ in range(80000):
+    y = w1 * x1 + w2 * x2
+    predicted = sigmoid(y)
+    err = error(predicted, target)
+    
+    predicted_output.append(predicted)
+    network_error.append(err)
+    
+    # Backpropagation
+    gradw1 = 2 * (predicted - target) * sigmoid(y) * x1
+    gradw2 = 2 * (predicted - target) * sigmoid(y) * x2
+    
+    w1 = update_w(w1, x1, gradw1, learning_rate)
+    w2 = update_w(w2, x2, gradw2, learning_rate)
+
+# Visualization
+plt.plot(network_error)
+plt.title("Iteration Number vs Error")
+plt.xlabel("Iteration Number")
+plt.ylabel("Error")
+plt.show()
+
+plt.plot(predicted_output)
+plt.title("Iteration Number vs Prediction")
+plt.xlabel("Iteration Number")
+plt.ylabel("Prediction")
+plt.show()
+
